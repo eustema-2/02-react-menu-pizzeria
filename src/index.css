@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Oswald:wght@400;500;700&display=swap");
+/*-----------
+  RESET
+------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*-----------
+  GENERAL
+------------*/
+.container {
+  max-width: 75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-small {
+  max-width: 64rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-----------
+  BUTTONS
+------------*/
+.btn {
+  background-color: #e5e5e5;
+  padding: 0.875rem 1.375rem;
+  border: none;
+  text-transform: uppercase;
+}
+
+/*-----------
+  TYPO
+------------*/
+body {
+  font-size: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: #e5e5e5;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #f12c0e;
+  font-size: 3.75rem;
+  font-weight: 400;
+}
+
+/*-----------
+  HEADER
+------------*/
+header {
+  text-align: center;
+  padding: 16px 0;
+  margin-bottom: 1rem;
+}
+header p {
+  font-style: italic;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*-----------
+  CARD
+------------*/
+.card {
+  display: flex;
+  background-color: #fff;
+}
+.card--disabled {
+  background-color: rgba(255, 0, 0, 0.3);
+  cursor: not-allowed;
+}
+.card__image {
+  width: 50%;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem;
+}
+.card__content h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.card__content p {
+  font-style: italic;
+}
+.card__price {
+  color: #f12c0e;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*-----------
+  FOOTER
+------------*/
+footer {
+  color: #ffffff;
+  background-color: #333333;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
